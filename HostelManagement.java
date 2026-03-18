@@ -13,7 +13,7 @@ public class HostelManagement {
 
     public static void main(String[] args) {
 
-        String uri = "mongodb+srv://ThrishaKS:Thrisha123@cluster0.dctg0cz.mongodb.net/?appName=Cluster0";
+        String uri = "";
         MongoClient client = MongoClients.create(uri);
         MongoDatabase db = client.getDatabase("hostelDB");
 
