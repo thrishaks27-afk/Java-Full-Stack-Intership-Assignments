@@ -14,7 +14,7 @@ public class StudentCURD {
     public static void main(String[] args) {
 
         // 🔹 Replace with your Atlas connection string
-        String uri = "mongodb+srv://ThrishaKS:Thrisha123@cluster0.dctg0cz.mongodb.net/?appName=Cluster0";
+        String uri = "";
 
         MongoClient client = MongoClients.create(uri);
 
