@@ -13,7 +13,7 @@ public class FoodDeliverySystem {
 
     public static void main(String[] args) {
 
-        String uri = "mongodb+srv://ThrishaKS:Thrisha123@cluster0.dctg0cz.mongodb.net/?appName=Cluster0"; // or your Atlas URI
+        String uri = ""; // or your Atlas URI
         MongoClient client = MongoClients.create(uri);
 
         MongoDatabase db = client.getDatabase("foodDB");
