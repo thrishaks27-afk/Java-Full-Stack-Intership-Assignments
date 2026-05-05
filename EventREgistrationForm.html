@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+
+    <script>
+        function showSummary() {
+            let events = [];
+            if(document.getElementById("dance").checked) events.push("Dance");
+            if(document.getElementById("coding").checked) events.push("Coding");
+            if(document.getElementById("singing").checked) events.push("Singing");
+
+            document.getElementById("summary").innerHTML =
+                "Selected Events: " + events.join(", ");
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h2>College Event Registration</h2>
+
+<!-- Audio -->
+<h3>Listen to Invitation</h3>
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<form onsubmit="showSummary()">
+
+    Name:<br>
+    <input type="text" required><br><br>
+
+    Email:<br>
+    <input type="email" pattern=".+@.+\.com" required><br><br>
+
+    Department:<br>
+    <input type="text" required><br><br>
+
+    <!-- Events -->
+    Events:<br>
+    <input type="checkbox" id="dance"> Dance<br>
+    <input type="checkbox" id="coding"> Coding<br>
+    <input type="checkbox" id="singing"> Singing<br><br>
+
+    <!-- File Upload -->
+    Upload Sample:<br>
+    <input type="file" accept=".mp3,.mp4"><br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Register">
+    <input type="reset">
+
+</form>
+
+<!-- Summary -->
+<p id="summary"></p>
+
+</body>
+</html>

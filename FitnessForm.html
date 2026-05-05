@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2 align="center">Fitness Registration</h2>
+
+<form>
+
+    <!-- Name -->
+    Name:<br>
+    <input type="text" required><br><br>
+
+    <!-- Age -->
+    Age:<br>
+    <input type="number" min="16" required><br><br>
+
+    <!-- Gender -->
+    Gender:<br>
+    <input type="radio" name="gender" required> Male
+    <input type="radio" name="gender"> Female<br><br>
+
+    <!-- Fitness Goal -->
+    Fitness Goal:<br>
+    <select required>
+        <option value="">Select</option>
+        <option>Weight Loss</option>
+        <option>Muscle Gain</option>
+        <option>Flexibility</option>
+    </select><br><br>
+
+    <!-- Time -->
+    Preferred Workout Time:<br>
+    <input type="time" required><br><br>
+
+    <!-- Terms -->
+    <input type="checkbox" required> I agree to health terms<br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+<hr>
+
+<h2 align="center">Workout Videos</h2>
+
+<!-- YouTube Video 1 -->
+<iframe width="400" height="250"
+src="https://www.youtube.com/embed/UItWltVZZmE">
+</iframe>
+
+<!-- YouTube Video 2 -->
+<iframe width="400" height="250"
+src="https://www.youtube.com/embed/ml6cT4AZdqI">
+</iframe>
+
+</body>
+</html>
