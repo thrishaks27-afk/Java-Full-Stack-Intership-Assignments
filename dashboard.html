@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.sidebar {
+    background: gray;
+    color: white;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: lightblue;
+}
+
+td, th {
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">Menu</div>
+
+    <div>
+        <table border="1">
+            <tr><th>Name</th><th>Age</th></tr>
+            <tr><td>A</td><td>20</td></tr>
+            <tr><td>B</td><td>21</td></tr>
+            <tr><td>C</td><td>22</td></tr>
+            <tr><td>D</td><td>23</td></tr>
+            <tr><td>E</td><td>24</td></tr>
+            <tr><td>F</td><td>25</td></tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

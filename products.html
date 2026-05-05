@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:500px){
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="card"><img src="https://via.placeholder.com/150"><h3>Product</h3><p>$10</p><button>Buy</button></div>
+<div class="card"><img src="https://via.placeholder.com/150"><h3>Product</h3><p>$20</p><button>Buy</button></div>
+<div class="card"><img src="https://via.placeholder.com/150"><h3>Product</h3><p>$30</p><button>Buy</button></div>
+<div class="card"><img src="https://via.placeholder.com/150"><h3>Product</h3><p>$40</p><button>Buy</button></div>
+<div class="card"><img src="https://via.placeholder.com/150"><h3>Product</h3><p>$50</p><button>Buy</button></div>
+<div class="card"><img src="https://via.placeholder.com/150"><h3>Product</h3><p>$60</p><button>Buy</button></div>
+
+</div>
+
+</body>
+</html>

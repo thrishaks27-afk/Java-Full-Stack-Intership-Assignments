@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+@media(max-width:600px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <h2>Logo</h2>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Welcome</h1>
+    <button>Get Started</button>
+</div>
+
+</body>
+</html>
